@@ -47,7 +47,7 @@ epm:install github.com/zzamboni/elvish-completions
 From the file where you will define your completions, load this module:
 
 #+begin_src elvish
-use github.com/zzamboni/elvish-completions/comp
+use github.com/LaurentFough/elvish-completions-zzamboni/comp
 #+end_src
 
 The main entry points for this module are =comp:item=, =comp:sequence= and =comp:subcommands=. Each one receives a single argument containing a  "completion definition", which indicates how the completions will be produced. Each one receives a different kind of completion structure, and returns a corresponding completion function, which receives the current contents of the command line (as passed to the [[https://elvish.io/ref/edit.html#argument-completer][argument completer functions]]) and returns the appropriate completions. The function returned by the =comp:*= functions can be assigned directly to an element of =$edit:completion:arg-completer=. A simple example:
@@ -144,7 +144,7 @@ edit:completion:arg-completer[ls] = (comp:sequence &opts=$ls-opts \
 )
 #+end_src
 
-*Example #4:* See the [[https://github.com/zzamboni/elvish-completions/blob/master/ssh.org][ssh completer]] for a real-world example of using sequences.
+*Example #4:* See the [[https://github.com/LaurentFough/elvish-completions-zzamboni/blob/master/ssh.org][ssh completer]] for a real-world example of using sequences.
 
 *** Subcommands
 
@@ -189,7 +189,7 @@ vagrant-completions = [
 edit:completion:arg-completer[vagrant] = (comp:subcommands &opts= [ version help ] $vagrant-completions)
 #+end_src
 
-*Example #7:* See the [[https://github.com/zzamboni/elvish-completions/blob/master/git.org][git completer]] for a real-world subcommand completion example, which also shows how extensively auto-population of subcommands and options can be done by extracting information from help messages.
+*Example #7:* See the [[https://github.com/LaurentFough/elvish-completions-zzamboni/blob/master/git.org][git completer]] for a real-world subcommand completion example, which also shows how extensively auto-population of subcommands and options can be done by extracting information from help messages.
 
 ** Utility functions
 

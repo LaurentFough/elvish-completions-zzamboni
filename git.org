@@ -28,7 +28,7 @@ epm:install github.com/zzamboni/elvish-completions
 In your =rc.elv=, load this module:
 
 #+begin_src elvish
-use github.com/zzamboni/elvish-completions/git
+use github.com/LaurentFough/elvish-completions-zzamboni/git
 #+end_src
 
 *Note:* This package depends on [[https://github.com/muesli/elvish-libs][@muesli's git library]]. If you use =epm= as described above, this package will be installed automatically, but if you clone this repository by hand, you need to install it by hand.
@@ -297,12 +297,12 @@ We run =init= by default on load, although it can be re-run if you change any co
 :END:
 
 #+begin_src elvish
-  use github.com/zzamboni/elvish-completions/git
+  use github.com/LaurentFough/elvish-completions-zzamboni/git
   use github.com/zzamboni/elvish-modules/test
 
   var cmds = ($git:git-arg-completer git '')
 
-  (test:set github.com/zzamboni/elvish-completions/git
+  (test:set github.com/LaurentFough/elvish-completions-zzamboni/git
     (test:set "common top-level commands"
       (test:check { has-value $cmds add })
       (test:check { has-value $cmds checkout })

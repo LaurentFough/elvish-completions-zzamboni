@@ -26,7 +26,7 @@ epm:install github.com/zzamboni/elvish-completions
 In your =rc.elv=, load this module:
 
 #+begin_src elvish
-use github.com/zzamboni/elvish-completions/builtins
+use github.com/LaurentFough/elvish-completions-zzamboni/builtins
 #+end_src
 
 Included completions:
@@ -46,12 +46,12 @@ Included completions:
      github.com/muesli/elvish-libs/theme/powerline    github.com/zzamboni/elvish-modules/nix
      github.com/xiaq/edit.elv/compl/go                github.com/zzamboni/elvish-modules/opsgenie
      github.com/xiaq/edit.elv/smart-matcher           github.com/zzamboni/elvish-modules/prompt-hooks
-     github.com/zzamboni/elvish-completions/builtins  github.com/zzamboni/elvish-modules/proxy
-     github.com/zzamboni/elvish-completions/cd        github.com/zzamboni/elvish-modules/semver
-     github.com/zzamboni/elvish-completions/comp      github.com/zzamboni/elvish-modules/terminal-title
-     github.com/zzamboni/elvish-completions/git       github.com/zzamboni/elvish-modules/util
-     github.com/zzamboni/elvish-completions/ssh       github.com/zzamboni/elvish-themes/chain
-     github.com/zzamboni/elvish-completions/vcsh      private
+     github.com/LaurentFough/elvish-completions-zzamboni/builtins  github.com/zzamboni/elvish-modules/proxy
+     github.com/LaurentFough/elvish-completions-zzamboni/cd        github.com/zzamboni/elvish-modules/semver
+     github.com/LaurentFough/elvish-completions-zzamboni/comp      github.com/zzamboni/elvish-modules/terminal-title
+     github.com/LaurentFough/elvish-completions-zzamboni/git       github.com/zzamboni/elvish-modules/util
+     github.com/LaurentFough/elvish-completions-zzamboni/ssh       github.com/zzamboni/elvish-themes/chain
+     github.com/LaurentFough/elvish-completions-zzamboni/vcsh      private
   #+end_example
 - =epm= commands: completes installed packages for the appropriate commands.
 

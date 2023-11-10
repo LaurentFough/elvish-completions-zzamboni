@@ -21,7 +21,7 @@ To install, use [[https://elvish.io/ref/epm.html][epm]]:
 For each module you want to use, you need to add the following to your =rc.elv= file:
 
 #+begin_src elvish
-  use github.com/zzamboni/elvish-completions/<modulename>
+  use github.com/LaurentFough/elvish-completions-zzamboni/<modulename>
 #+end_src
 
 See each module's page for detailed usage instructions.

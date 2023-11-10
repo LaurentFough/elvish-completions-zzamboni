@@ -25,7 +25,7 @@ epm:install github.com/zzamboni/elvish-completions
 In your =rc.elv=, load this module:
 
 #+begin_src elvish
-use github.com/zzamboni/elvish-completions/ssh
+use github.com/LaurentFough/elvish-completions-zzamboni/ssh
 #+end_src
 
 Hosts for the completions will be read from the files listed in the =$config-files= variable. Here is its default value:
